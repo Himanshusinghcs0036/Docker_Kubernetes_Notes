@@ -77,7 +77,7 @@ docker cp sampleFile.txt containerName:/root/sampleFile.txt
   6. Expose port 5000
   7. RUN python /tmp/hello.py command
 
-  RUN docker build -t SamplecontainerName . to create a image with name *SamplecontainerName*
+  RUN "docker build -t SamplecontainerName ." to create a image with name *SamplecontainerName*
 
   You could also define volume and link in docker file.
 
