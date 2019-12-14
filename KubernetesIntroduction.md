@@ -37,10 +37,11 @@ A Worker Node is also referred to as a Node for short. A Node is an abstraction 
 ![](https://github.com/Himanshusinghcs0036/Docker_Kubernetes_Notes/blob/master/KubeImages/worker.png)
 >> #### **Node Components:**
 Kubernetes worker can be divided into 3 components. these components run on each node.
+
 **1. container RunTime :** Downloads images and runs containers. For example, Docker is a Container Runtime.
 **2. Kubelet :** Kubelet is most important component of worker/ Node. It is kublet's task to run the pod and ensure that pod it in running state (As long it should be). It monitor the health of the running pod and keep the master updated with the pod state.
 API Server invokes the Kubelet in the corresponding node to create the pod. kubelet talks to the container runtime  using the API over the Docker socket to create the container and then Kubelet updates the pod status to the API Server.
-**2. Kube-proxy :** Routes connections to the correct Pods. Also performs load balancing across Pods for a Service. Think traffic cop. It ensure that one node can talk with another node, one pod can communicate with other pod, one container can communicate with other container.
+**3. Kube-proxy :** Routes connections to the correct Pods. Also performs load balancing across Pods for a Service. Think traffic cop. It ensure that one node can talk with another node, one pod can communicate with other pod, one container can communicate with other container.
 
 
 > ### ** Process Flow : **
