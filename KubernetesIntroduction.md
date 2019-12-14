@@ -1,5 +1,5 @@
 # ***STARTING WITH KUBERNETES***
-![](/Users/hsing110/Documents/KubeImages/K8Logo.png)
+![](https://github.com/Himanshusinghcs0036/Docker_Kubernetes_Notes/blob/master/KubeImages/K8Logo.png)
 
 ## *what is KUBERNETES: *
 > Kubernetes is Container Orchestration Engine.
