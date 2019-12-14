@@ -1,5 +1,5 @@
 # ***STARTING WITH KUBERNETES***
-![](/Users/hsing110/Documents/KubeImages/K8Logo.png)
+![](https://github.com/Himanshusinghcs0036/Docker_Kubernetes_Notes/blob/master/KubeImages/K8Logo.png)
 
 ## *what is KUBERNETES: *
 > Kubernetes is Container Orchestration Engine.
@@ -16,10 +16,10 @@ Kubernetes is often referenced with K8s that represents K for Start and s for en
 ## *KUBERNETES Architecture: *
 
 > Kubernetes follows master-slave architecture. Kubernetes supports one or master and can manage up to 5000 worker nodes.
-![](/Users/hsing110/Documents/KubeImages/MasterWorkerArchitecture.jpeg)
+![](https://github.com/Himanshusinghcs0036/Docker_Kubernetes_Notes/blob/master/KubeImages/MasterWorkerArchitecture.jpeg)
 
 > ### **Master:**
-![](/Users/hsing110/Documents/KubeImages/K8Component.png)
+![](https://github.com/Himanshusinghcs0036/Docker_Kubernetes_Notes/blob/master/KubeImages/K8Component.png)
 Master refers to the process managing the cluster. Typically all these processes run on a single node in the cluster, and this node is also referred to as the master. The Kubernetes master is responsible for maintaining the desired state for your cluster.
 All user requests goes through Master and Master decide/ manage how these requests will be served.
 >> #### **Master Components:**
@@ -34,7 +34,7 @@ Other than this Object running on cluster connect to API server to modify the st
 
 > ### **Worker / Node:**
 A Worker Node is also referred to as a Node for short. A Node is an abstraction for a machine — either a physical machine or a virtual machine. Think of a Node as a computer server. Runs the Kubernetes agent that is responsible for running Pod containers via Docker or rkt, requests secrets or configurations, mounts required Pod volumes, does health checks and reports the status of Pods and the node to the rest of the system.
-![](/Users/hsing110/Documents/KubeImages/worker.png)
+![](https://github.com/Himanshusinghcs0036/Docker_Kubernetes_Notes/blob/master/KubeImages/worker.png)
 >> #### **Node Components:**
 Kubernetes worker can be divided into 3 components. these components run on each node.
 **1. container RunTime :** Downloads images and runs containers. For example, Docker is a Container Runtime.
@@ -44,7 +44,7 @@ API Server invokes the Kubelet in the corresponding node to create the pod. kube
 
 
 > ### ** Process Flow : **
-![](/Users/hsing110/Documents/KubeImages/MasterComponents.png)
+![](https://github.com/Himanshusinghcs0036/Docker_Kubernetes_Notes/blob/master/KubeImages/MasterComponents.png)
 *1.* kubectl writes to the API Server.
 *3.* etcd notifies back the API Server.
 *4.* API Server invokes the Scheduler.
