@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todolist-deployment
+  labels:
+    app: todolist
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: todolist
+  template:
+    metadata:
+      labels:
+        app: todolist
+    spec:
+      containers:
+        - name: todolist
+          image: "pankajdubeycs0056/todolist"
+          imagePullPolicy: Always
+          resources:
+            limits:
+              cpu: "2"
+              memory: 20Gi
+            requests:
+              cpu: "100m"
+              memory: 4Gi
+          volumeMounts:
+            - mountPath: "/Users/mediumUser/"
+              name: sampleVolume
+      volumes:
+        - name: sampleVolume
+          persistentVolumeClaim:
+            claimName: pvc-sample-volume
